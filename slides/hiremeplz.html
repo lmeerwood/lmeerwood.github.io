@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>hiremeplz</title>
 
 		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
 		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
@@ -59,6 +59,21 @@
         </section>
 
         <section>
+          <h3>The Team</h3>
+          <ul>
+            <li class="fragment">Myself</li>
+            <li class="fragment">A part time employee with extensive knowledge</li>
+            <li class="fragment">At the end a new employee who I trained as my replacement</li>
+            <li class="fragment">Also had access to:
+              <ul>
+                <li class="fragment">Principal consultant</li>
+                <li class="fragment">Other iP Edge employees</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
           <section>
             <h2>What was our deliverable?</h2>
             <p class="fragment fade-in">A working prototype for a web application that allows users to withdraw earned pay, early.</p>
@@ -74,10 +89,10 @@
             <h2>Employees</h2>
             <ul>
               <li class="fragment">Manage companies
-                <ul>
-                  <li class="fragment">Withdrawal fee</li>
-                  <li class="fragment">Max withdrawal per pay cycle</li>
-                  <li class="fragment">Payroll contacts</li>
+                <ul class="fragment">
+                  <li>Withdrawal fee</li>
+                  <li>Max withdrawal per pay cycle</li>
+                  <li>Payroll contacts</li>
                 </ul>
               </li>
               <li class="fragment">Process early pay withdrawal request</li>
@@ -91,7 +106,7 @@
             <li class="fragment">Secure</li>
             <li class="fragment">Hosted in Australia</li>
             <li class="fragment">Mobile responsive</li>
-            <li class="fragment">Users can only sign up if they receive a unique link</li>
+            <li class="fragment">Users can only sign up if invited</li>
             <li class="fragment">SMS verification and withdrawal notices</li>
           </ul>
         </section>
@@ -102,7 +117,7 @@
           <img class="fragment" height="150" src="img/hmp/pngegg.png" alt="ASPNet Core">
           <img class="fragment" height="150" src="img/hmp/cosmos-db.png" alt="CosmosDB">
           <img class="fragment" height="150" src="img/hmp/azure-logo.png" alt="Azure">
-          <p class="fragment">Use as many prebuilt libraries as possible</p>
+          <p class="fragment"><strong>Use as many prebuilt libraries as possible!</strong></p>
         </section>
 
         <!-- Stakeholder discussion -->
@@ -143,7 +158,96 @@
         <!-- Development process-->
 
         <section>
-          <h2>Research</h2>
+          <h3>Development</h3>
+          <ul>
+            <li>
+              Semi-Agile work flow
+              <ul>
+                <li class="fragment">All stories sorted by priority</li>
+                <li class="fragment">Try estimate sprint goals</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Research</h3>
+          <p>A week spent researching libraries</p>
+          <ul>
+            <li class="fragment">React JSON Schema Form</li>
+            <li class="fragment">Telerik UI</li>
+            <li class="fragment">Azure AD B2C</li>
+            <li class="fragment">Reported results to principal consultant</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Back End/API Development</h3>
+          <ul>
+            <li class="fragment" data-fragment-index="1">Developed First</li>
+            <li class="fragment" data-fragment-index="2">
+              API tested with Postman
+              <br>
+              <img src="img/hmp/postman-logo2.png" alt="Postman Logo" class="fragment" data-fragment-index="2" width="300">
+            </li>
+            <li class="fragment">Database Development</li>
+            <li class="fragment">Access Security</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h3>Database Development</h3>
+          <ul>
+            <li class="fragment">Went with NoSQL, seemed a better fit for CosmosDB</li>
+            <li class="fragment">SQL probably a better fit due to transactional nature</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Access Security</h3>
+          <ul>
+            <li class="fragment">
+              Created Azure Apps for each part
+              <ul class="fragment">
+                <li>Database</li>
+                <li>API</li>
+                <li>End User interface</li>
+                <li>Employee interface</li>
+              </ul>
+            </li>
+            <li class="fragment">Took awhile to understand app interactions</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h3>User Management</h3>
+            <ul class="fragment">
+              <li>Azure AD for employee access</li>
+              <li>Azure AD B2C for end user access</li>
+              <li class="fragment">Having multiple AD types was a pain point in API</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Multiple AD Issues</h3>
+            <ul>
+              <li class="fragment">All documentation showed single AD examples</li>
+              <li class="fragment">Not many examples of multiple AD access to backend</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Trouble shooting process</h3>
+            <ul>
+              <li class="fragment">Look through documentation</li>
+              <li class="fragment">Search internet for answers</li>
+              <li class="fragment">Ask coworkers for advice</li>
+              <li class="fragment">Ask on a forum (e.g. StackOverflow) for assistance</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Multiple AD Outcome</h3>
+            <ul>
+              <li class="fragment">Found a blog post similar to what I needed to do</li>
+              <li class="fragment">Used the knowledge with the documentation</li>
+              <li class="fragment">Solved the issue</li>
+            </ul>
+          </section>
         </section>
 
         <!-- Success or no Success? -->
@@ -151,7 +255,10 @@
           <h3>
             Was it a success?
           </h3>
-          <p class="fragment">The client was happy with the result<span class="fragment">... but that's about all I know</span></p>
+          <ul>
+            <li class="fragment">Was the project feature complete? <span class="fragment"><strong>Yes</strong></span></li>
+            <li class="fragment">Was the project delivered on time? <span class="fragment"><strong>A fortnight late due to changes</strong></span></li>
+          </ul>
         </section>
         <section>
           <img src="img/hmp/payefast-website.png">
@@ -162,17 +269,7 @@
 			</div>
     </div>
     
-    <!--
-      # SCRIPT Overview
-
-      - About me
-      - About Client
-      - About Project
-      - Client Requirements
-      - Project Manager requirements
-      - 
-    -->
-
+    
 		<script src="../reveal.js/dist/reveal.js"></script>
 		<script src="../reveal.js/plugin/notes/notes.js"></script>
 		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
