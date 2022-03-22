@@ -22,38 +22,135 @@
                 <h1>Hello!</h1>
             </section>
             <section>
-                <h1>Who Am I?</h1>
-                <ul class="fragment">
-                    <li>Leonard Meerwood (but call me Lenny!)</li>
+                <h3>Who Am I?</h3>
+                <ul class="fragment" data-fragment-index="1">
+                    <li>Lenny (Leonard) Meerwood</li>
                     <li>A Bachelor of Computer Science from Charles Sturt University</li>
                     <li>Worked at:
-                        <ul>
-                            <img class="fragment" height="150" src="img/hmp/gloriajeans.png" alt="React">
-                            <img class="fragment" height="150" src="img/hmp/ccc.jpg" alt="ASPNet Core">
-                            <img class="fragment" height="150" src="img/hmp/ipedgelogo.png" alt="CosmosDB">
-                            <img class="fragment" height="150" src="img/hmp/juclogo.jpg" alt="Azure">
-                        </ul>
+                        <div>
+                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png"
+                                alt="Gloria Jeans" data-fragment-index="2">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg"
+                                alt="Calvary Christian College" data-fragment-index="3">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge"
+                                data-fragment-index="4">
+                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg"
+                                alt="James Cook University" data-fragment-index="5">
+                        </div>
                     </li>
                 </ul>
             </section>
             <section>
-                <h3>My Presentation Plan</h3>
-                <div>
-                    <p>About Me</p>
-                </div>
-                <div class="fragment">
-                    <img width="50" src="img/hmp/arrowdown.png" alt="⬇">
-                    <p>Overview of the data pipelines</p>
-                </div>
-                <div class="fragment">
-                    <img width="50" src="img/hmp/arrowdown.png" alt="⬇">
-                    <p>My contributions</p>
-                </div>
-
+                <h3>I'm a Data Engineer</h3>
+                <p class="fragment">Work on a Data Pipeline</p>
+                <p class="fragment">Business Intelligence Analyst <br /> Business Insight Analyst</p>
             </section>
+            <section>
+                <section>
+                    <h3>My Presentation Plan</h3>
+                </section>
+                <section>
+                    <h3>Overview of the data pipelines</h3>
+                </section>
+                <section>
+                    <h3>My contributions</h3>
+                </section>
+            </section>
+            <!-- Data Pipeline -->
+            <section>
+                <h1>Data Pipeline</h1>
+                <img src="img/hmp/pipes.jpg" alt="Photo by on Unsplash" />
+                <aside class="notes">
+                    <p>
+                        The data pipeline essentially takes data from disparate data sources and provides it to be
+                        queried. It is
+                        a lot like a water processing plant in your city, when it's
+                        working you won't even notice it is there, but it is still extremely important.
+                    </p>
+                    <p>
+                        By providing this clean data, we are making the BIA's job possible.
+                    </p>
+                </aside>
+            </section>
+            <section>
+                <h4 class="fragment semi-fade-out" data-fragment-index="2">What does the data pipeline provide?</h3>
+                    <span class="fragment" data-fragment-index="1">
+                        <p class="fragment semi-fade-out" data-fragment-index="2">Datasets</p>
+                        <p class="fragment grow" data-fragment-index="2">The Data Warehouse</p>
+                    </span>
+            </section>
+            <!-- Data Sets -->
+            <section>
+                <section>
+                    <h2 class="fragment shrink" data-fragment-index="1">What are Datasets?</h2>
+                    <p class="fragment" data-fragment-index="1"><em>Bespoke</em> information generated for a
+                        <em>narrow</em> purpose.</p>
+                    <!-- An example of this is the survey data. -->
+                    <aside class="notes"></aside>
+                </section>
+                <section>
+                    <h2>Advantages</h2>
+                    <ul>
+                        <li class="fragment">Easy to make</li>
+                        <li class="fragment">Quick to deliver</li>
+                        <li class="fragment">Fits the intended purpose</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Disadvantages</h2>
+                    <ul>
+                        <li class="fragment">Not always quick and easy</li>
+                        <li class="fragment">Maintenance</li>
+                        <li class="fragment">Stuck to a specific scope</li>
+                        <li class="fragment">Need to know all the columns at build time</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>
+                                Most datasets require little more than extracting from a source system adding a few
+                                columns
+                                and presenting it. Others are much more involved, such as our cohorts dataset. It
+                                requires
+                                several transformation stages, and nearly ten pages of documentation to explain.
+                            </li>
+                            <li>
+                                They require lots of upkeep. Give example about survey data from QILT.
+                            </li>
+                            <li>
+                                Not very good at being used outside their intended purpose. For instace, TM1 datasets.
+                            </li>
+                            <li>
+                                You need to know exactly what fields the end user requires.
+                            </li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <h1>The Data Warehouse</h1>
+                <img src="img/hmp/warehouse.jpg" alt="Data Warehouse">
+            </section>
+            <section>
+                <section>
+                    <h2 class="fragment shrink" data-fragment-index="1">So what does it actually do?</h2>
+                    <p class="fragment" data-fragment-index="1">
+                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a
+                        format which allows analysis and encourages exploration.
+                    </p>
+                </section>
+                <section>
+                    <div class="r-stack">
+                        <img src="img/hmp/wholesystem.png" alt="The whole system" class="fragment fade-in-then-semi-out">
+                        <img src="img/hmp/wholesystem-focused.png" alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
+                        <img src="img/hmp/wholesystem-cropped.png" alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
+                    </div>
+                </section>
+            </section>
+
         </div>
     </div>
     <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
@@ -61,14 +158,16 @@
         Reveal.initialize({
             hash: true,
             // Learn about plugins: https://revealjs.com/plugins/
-            plugins: []
+            plugins: [RevealNotes]
         });
     </script>
     <!-- Pipeline -->
     <!-- - Definition -->
+    <!-- -- Data Warehouse -->
     <!-- - Advantages -->
     <!-- - Two-Tiered Architecture -->
     <!-- -- Data Warehouse -->
+    <!-- --- Fast: https://www.nngroup.com/articles/response-times-3-important-limits/ -->
     <!-- -- Data sets -->
     <!-- --- Why is not everything a Data sets / Fact -->
     <!-- My Contributions -->
@@ -79,6 +178,9 @@
     <!-- -- Found an organization method -->
     <!-- -- Discovered a standard for four different document types -->
     <!-- -- Introduced Ownership and expirations  -->
+    <!-- Personal Discoveries  -->
+    <!-- - Self Directed  -->
+    <!-- - Self Learning  -->
 </body>
 
 </html>
