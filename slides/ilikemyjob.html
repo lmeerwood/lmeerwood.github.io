@@ -28,14 +28,10 @@
                     <li>A Bachelor of Computer Science from Charles Sturt University</li>
                     <li>Worked at:
                         <div>
-                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png"
-                                alt="Gloria Jeans" data-fragment-index="2">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg"
-                                alt="Calvary Christian College" data-fragment-index="3">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge"
-                                data-fragment-index="4">
-                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg"
-                                alt="James Cook University" data-fragment-index="5">
+                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png" alt="Gloria Jeans" data-fragment-index="2">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg" alt="Calvary Christian College" data-fragment-index="3">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge" data-fragment-index="4">
+                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg" alt="James Cook University" data-fragment-index="5">
                         </div>
                     </li>
                 </ul>
@@ -62,10 +58,7 @@
                 <img src="img/hmp/pipes.jpg" alt="Photo by on Unsplash" />
                 <aside class="notes">
                     <p>
-                        The data pipeline essentially takes data from disparate data sources and provides it to be
-                        queried. It is
-                        a lot like a water processing plant in your city, when it's
-                        working you won't even notice it is there, but it is still extremely important.
+                        The data pipeline essentially takes data from disparate data sources and provides it to be queried. It is a lot like a water processing plant in your city, when it's working you won't even notice it is there, but it is still extremely important.
                     </p>
                     <p>
                         By providing this clean data, we are making the BIA's job possible.
@@ -107,11 +100,8 @@
                     <aside class="notes">
                         <ul>
                             <li>
-                                Most datasets require little more than extracting from a source system adding a few
-                                columns
-                                and presenting it. Others are much more involved, such as our cohorts dataset. It
-                                requires
-                                several transformation stages, and nearly ten pages of documentation to explain.
+                                Most datasets require little more than extracting from a source system adding a few columns and presenting it. Others are much more involved, such as our cohorts dataset. It requires several transformation stages, and nearly ten pages of documentation
+                                to explain.
                             </li>
                             <li>
                                 They require lots of upkeep. Give example about survey data from QILT.
@@ -134,17 +124,48 @@
                 <section>
                     <h2 class="fragment shrink" data-fragment-index="1">So what does it actually do?</h2>
                     <p class="fragment" data-fragment-index="1">
-                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a
-                        format which allows analysis and encourages exploration.
+                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a format which allows cross-source analysis and encourages exploration.
                     </p>
                 </section>
                 <section>
+                    <h2 class="fragment shrink" data-fragment-index="1">Why not just use the source systems?</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="1">Designed for reading and writing</li>
+                        <ul style="list-style-type: none;">
+                            <li class="fragment">Slow for massive queries</li>
+                        </ul>
+                        <li class="fragment">At the wrong grain</li>
+                        <li class="fragment">At the wrong time span</li>
+                        <li class="fragment">Lacks dimensionality</li>
+                    </ul>
+                </section>
+                <section>
                     <div class="r-stack">
+                        <h3 class="fragment fade-out">What does this look like?</h3>
                         <img src="img/hmp/wholesystem.png" alt="The whole system" class="fragment fade-in-then-semi-out">
                         <img src="img/hmp/wholesystem-focused.png" alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
                         <img src="img/hmp/wholesystem-cropped.png" alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
                     </div>
+                    <aside class="notes">
+                        Explain the three different sections.
+                        <br/> Explain why we have four copies of the data.
+                    </aside>
                 </section>
+                <section>
+                    <h3>The Process</h3>
+                    <ul class="fragment" style="list-style-type: none;">
+                        <li>E<span class="fragment">xtract</span></li>
+                        <li>T<span class="fragment">ransform</span></li>
+                        <li>L<span class="fragment">oad </span></li>
+                    </ul>
+                </section>
+            </section>
+            <!-- All about me! -->
+            <section>
+                <h2>My Involvement</h2>
+            </section>
+            <section>
+
             </section>
 
         </div>
@@ -166,10 +187,10 @@
     <!-- -- Data Warehouse -->
     <!-- - Advantages -->
     <!-- - Two-Tiered Architecture -->
-    <!-- -- Data Warehouse -->
-    <!-- --- Fast: https://www.nngroup.com/articles/response-times-3-important-limits/ -->
     <!-- -- Data sets -->
     <!-- --- Why is not everything a Data sets / Fact -->
+    <!-- -- Data Warehouse -->
+    <!-- --- Fast: https://www.nngroup.com/articles/response-times-3-important-limits/ -->
     <!-- My Contributions -->
     <!-- - Git -->
     <!-- -- Worked from coworkers specs -->
