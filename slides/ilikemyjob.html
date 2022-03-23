@@ -7,12 +7,12 @@
 
     <title>I like my job</title>
 
-    <link rel="stylesheet" href="../reveal.js/dist/reset.css">
-    <link rel="stylesheet" href="../reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="../reveal.js/dist/theme/league.css" id="theme">
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/league.css" id="theme">
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
 </head>
 
 <body>
@@ -28,10 +28,14 @@
                     <li>A Bachelor of Computer Science from Charles Sturt University</li>
                     <li>Worked at:
                         <div>
-                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png" alt="Gloria Jeans" data-fragment-index="2">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg" alt="Calvary Christian College" data-fragment-index="3">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge" data-fragment-index="4">
-                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg" alt="James Cook University" data-fragment-index="5">
+                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png"
+                                alt="Gloria Jeans" data-fragment-index="2">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg"
+                                alt="Calvary Christian College" data-fragment-index="3">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge"
+                                data-fragment-index="4">
+                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg"
+                                alt="James Cook University" data-fragment-index="5">
                         </div>
                     </li>
                 </ul>
@@ -46,10 +50,17 @@
                     <h3>My Presentation Plan</h3>
                 </section>
                 <section>
-                    <h3>Overview of the data pipelines</h3>
+                    <h3>Overview of the data pipelines (Project)</h3>
                 </section>
                 <section>
                     <h3>My contributions</h3>
+                    <ul>
+                        <li class="fragment">Stakeholder engagement</li>
+                        <li class="fragment">Tools and technical solutions</li>
+                        <li class="fragment">The teams I involve</li>
+                        <li class="fragment">Documentation and development methodologies</li>
+                        <li class="fragment">Success criteria for project</li>
+                    </ul>
                 </section>
             </section>
             <!-- Data Pipeline -->
@@ -58,10 +69,12 @@
                 <img src="img/hmp/pipes.jpg" alt="Photo by on Unsplash" />
                 <aside class="notes">
                     <p>
-                        The data pipeline essentially takes data from disparate data sources and provides it to be queried. It is a lot like a water processing plant in your city, when it's working you won't even notice it is there, but it is still extremely important.
+                        The data pipeline essentially takes data from disparate data sources and provides it to be
+                        queried. It is a lot like a water processing plant in your city, when it's working you won't
+                        even notice it is there, but it is still extremely important.
                     </p>
                     <p>
-                        By providing this clean data, we are making the BIA's job possible.
+                        By providing this clean data, we are enable BIA's to do their job.
                     </p>
                 </aside>
             </section>
@@ -78,7 +91,6 @@
                     <h2 class="fragment shrink" data-fragment-index="1">What are Datasets?</h2>
                     <p class="fragment" data-fragment-index="1"><em>Bespoke</em> information generated for a
                         <em>narrow</em> purpose.</p>
-                    <!-- An example of this is the survey data. -->
                     <aside class="notes"></aside>
                 </section>
                 <section>
@@ -88,6 +100,13 @@
                         <li class="fragment">Quick to deliver</li>
                         <li class="fragment">Fits the intended purpose</li>
                     </ul>
+                    <aside class="notes">
+                        <p>
+                            An example of this is the survey data we retrieve from QILT.
+                            <br />
+                            It requires little more than parsing it and adding a couple of fields to it.
+                        </p>
+                    </aside>
                 </section>
                 <section>
                     <h2>Disadvantages</h2>
@@ -100,11 +119,12 @@
                     <aside class="notes">
                         <ul>
                             <li>
-                                Most datasets require little more than extracting from a source system adding a few columns and presenting it. Others are much more involved, such as our cohorts dataset. It requires several transformation stages, and nearly ten pages of documentation
-                                to explain.
+                                Some datasets are quite complex. For instance, Ray created a dataset that has
+                                nearly 500 lines of code and 10 pages of documentation explaining it.
                             </li>
                             <li>
-                                They require lots of upkeep. Give example about survey data from QILT.
+                                They require lots of upkeep. Made a dataset for Sathish and TM1, he is constantly asking
+                                for adjustments
                             </li>
                             <li>
                                 Not very good at being used outside their intended purpose. For instace, TM1 datasets.
@@ -124,7 +144,8 @@
                 <section>
                     <h2 class="fragment shrink" data-fragment-index="1">So what does it actually do?</h2>
                     <p class="fragment" data-fragment-index="1">
-                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a format which allows cross-source analysis and encourages exploration.
+                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a
+                        format which allows cross-source analysis and encourages exploration.
                     </p>
                 </section>
                 <section>
@@ -142,13 +163,15 @@
                 <section>
                     <div class="r-stack">
                         <h3 class="fragment fade-out">What does this look like?</h3>
-                        <img src="img/hmp/wholesystem.png" alt="The whole system" class="fragment fade-in-then-semi-out">
-                        <img src="img/hmp/wholesystem-focused.png" alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
-                        <img src="img/hmp/wholesystem-cropped.png" alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
+                        <img src="img/hmp/wholesystem-focused.png"
+                            alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
+                        <img src="img/hmp/wholesystem-cropped.png"
+                            alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
                     </div>
                     <aside class="notes">
                         Explain the three different sections.
-                        <br/> Explain why we have four copies of the data.
+                        <br />
+                        Explain why we have four copies of the data.
                     </aside>
                 </section>
                 <section>
@@ -159,19 +182,139 @@
                         <li>L<span class="fragment">oad </span></li>
                     </ul>
                 </section>
+                <section>
+                    <h2>Extract</h2>
+                    <img class="r-stretch" src="img/hmp/extract.png" alt="Extract">
+                    <aside class="notes">
+                        This is where we copy the data from the source systems to our database ready for processing.
+
+                        Happens nightly.
+
+                        Only slight transforms happen here.
+
+                        A common pattern is keeping a copy of the data after every step.
+                    </aside>
+                </section>
+                <section>
+                    <h2>Transform</h2>
+                    <img src="img/hmp/transform.png" alt="Transform" class="r-stretch">
+                    <aside class="notes">This slide betrays the complexity of what is actually happening here.</aside>
+                </section>
+                <section>
+                    <img src="img/hmp/transform full.png" alt="Transform Full" class="r-stretch">
+                    <aside class="notes">
+                        Each dot is another file, each one showing another file.
+                        <br />
+                        Each file is applying business rules.
+                    </aside>
+                </section>
+                <section>
+                    <h2>Load</h2>
+                    <img src="img/hmp/Load.png" alt="Transform" class="r-stretch">
+                    <aside class="notes">Final stage is the load. In this part we take the results of all the business
+                        rules transformations and store it where the systems like Cognos and Tableu can access them.
+                    </aside>
+                </section>
+                <section>
+                    <img src="img/hmp/wholesystem.png" alt="The whole system" class="r-stretch">
+                    <aside class="notes">
+                        Because loading the tables takes a slow process there would normally be an
+                        outage of a few minutes where Cognos could not work. We employ a renaming trick
+                        so the Cognos and Tableu never see an outage.
+                    </aside>
+                </section>
+                <section>
+                    <h1>Future plans</h1>
+                </section>
+                <section>
+                    <h2>Apache Airflow</h2>
+                    <img src="img/hmp/airflow.png" height="200" alt="airflow">
+                    <aside class="notes">
+                        Orchestration tool
+                        <br />
+                        Why do we need this? Well we currently use Shell scripts to do it.</aside>
+                </section>
+                <section>
+                    <img src="img/hmp/shell.png" alt="Shell script" class="r-stretch">
+                </section>
+                <section>
+                    <img src="img/hmp/transform full.png" alt="Shell script" class="r-stretch">
+                    <aside class="notes">We are responsible for figuring out exactly where each of these needs to run
+                        and in what order.</aside>
+                </section>
+                <section>
+                    <span class="fragment">File B</span> relies on <span class="fragment">File A and File C</span>
+                </section>
+                <section>
+                    <img src="img/hmp/dagflow.jpg" alt="Dag Flow" class="r-stretch">
+                </section>
+                <section>
+                    <h2>Benefits</h2>
+                    <ul>
+                        <li class="fragment">Reduces chance for human error</li>
+                        <li class="fragment">Allows for parallel execution</li>
+                        <li class="fragment">Better error recovery</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Current Error Notification</h3>
+                    <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
+                </section>
+                <section>
+                    <!-- TODO -->
+                    <h3>Airflow Error Notification</h3>
+                    <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
+                </section>
+                <section>
+                    <!-- TODO -->
+                    <h3>Better Error Recovery</h3>
+                    <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
+                </section>
             </section>
             <!-- All about me! -->
+
             <section>
                 <h2>My Involvement</h2>
             </section>
             <section>
-
+                <section>
+                    <h2>Stakeholder engagement</h2>
+                    <img src="img/hmp/mario-gogh-VBLHICVh-lI-unsplash.jpg" alt="" class="r-strech">
+                </section>
+                <section>
+                    <h3>Usual flow</h3>
+                    <ul>
+                        <li class="fragment">Notified by Dan</li>
+                        <li class="fragment">Communicate directly with stakeholder</li>
+                        <li class="fragment">CC Dan and Team Mates in correspondance</li>
+                    </ul>
+                    <aside class="notes">
+                        Middle of last year I had to handle a massive change from HR where they reorganized their data.
+                        Throughout this time I was in contact with them via Teams keeping them updated on the progress.
+                        I also kept others in my team up-to-date as the changes effected nearly eveyrone.
+                    </aside>
+                </section>
             </section>
-
+            <section>
+                <section>
+                    <h2>Tools and Technical Solutions</h2>
+                    <ul>
+                        <li class="fragment">Handcoded SQL</li>
+                        <li class="fragment">Oracle SQL Databases</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Why Hand Coded SQL?</h2>
+                    <ul>
+                        <li class="fragment">It's performant</li>
+                        <li class="fragment">Not </li>
+                    </ul>
+                </section>
+            </section>
         </div>
     </div>
-    <script src="../reveal.js/dist/reveal.js"></script>
-    <script src="../reveal.js/plugin/notes/notes.js"></script>"></script>
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
