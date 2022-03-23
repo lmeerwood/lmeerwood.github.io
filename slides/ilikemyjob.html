@@ -7,12 +7,12 @@
 
     <title>I like my job</title>
 
-    <link rel="stylesheet" href="reveal.js/dist/reset.css">
-    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="reveal.js/dist/theme/league.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="../reveal.js/dist/theme/league.css" id="theme">
 
     <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+    <link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
 </head>
 
 <body>
@@ -20,6 +20,7 @@
         <div class="slides">
             <section>
                 <h1>Hello!</h1>
+                <aside class="notes">Thank you for giving me the opportunity in this past year. I have enjoyed it thoroughly and I look forward to hopefully a long time with the team still.</aside>
             </section>
             <section>
                 <h3>Who Am I?</h3>
@@ -28,14 +29,10 @@
                     <li>A Bachelor of Computer Science from Charles Sturt University</li>
                     <li>Worked at:
                         <div>
-                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png"
-                                alt="Gloria Jeans" data-fragment-index="2">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg"
-                                alt="Calvary Christian College" data-fragment-index="3">
-                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge"
-                                data-fragment-index="4">
-                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg"
-                                alt="James Cook University" data-fragment-index="5">
+                            <img class="fragment fade-left" height="150" src="img/hmp/gloriajeans.png" alt="Gloria Jeans" data-fragment-index="2">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ccc.jpg" alt="Calvary Christian College" data-fragment-index="3">
+                            <img class="fragment fade-left" height="150" src="img/hmp/ipedgelogo.png" alt="iP Edge" data-fragment-index="4">
+                            <img class="fragment fade-left" height="150" src="img/hmp/juclogo.jpg" alt="James Cook University" data-fragment-index="5">
                         </div>
                     </li>
                 </ul>
@@ -44,6 +41,12 @@
                 <h3>I'm a Data Engineer</h3>
                 <p class="fragment">Work on a Data Pipeline</p>
                 <p class="fragment">Business Intelligence Analyst <br /> Business Insight Analyst</p>
+                <aside class="notes">
+                    <ul>
+                        <li>My main area of responsibility is the data pipeline. This is the process that provides data for analysis and dashboards</li>
+                        <li>This makes my main clients the BIAs. Everything I do is so they can provide accurate analysis to the business.</li>
+                    </ul>
+                </aside>
             </section>
             <section>
                 <section>
@@ -69,12 +72,11 @@
                 <img src="img/hmp/pipes.jpg" alt="Photo by on Unsplash" />
                 <aside class="notes">
                     <p>
-                        The data pipeline essentially takes data from disparate data sources and provides it to be
-                        queried. It is a lot like a water processing plant in your city, when it's working you won't
-                        even notice it is there, but it is still extremely important.
+                        The data pipeline essentially takes data from disparate data sources, cleans it and provides it in a format that can be queried. It is a lot like a water processing plant in your city, when it's working you won't even notice it is there, but it is still
+                        extremely important.
                     </p>
                     <p>
-                        By providing this clean data, we are enable BIA's to do their job.
+                        As stated before this data is what allows the BIAs to provide their services.
                     </p>
                 </aside>
             </section>
@@ -90,7 +92,8 @@
                 <section>
                     <h2 class="fragment shrink" data-fragment-index="1">What are Datasets?</h2>
                     <p class="fragment" data-fragment-index="1"><em>Bespoke</em> information generated for a
-                        <em>narrow</em> purpose.</p>
+                        <em>narrow</em> purpose.
+                    </p>
                     <aside class="notes"></aside>
                 </section>
                 <section>
@@ -103,8 +106,7 @@
                     <aside class="notes">
                         <p>
                             An example of this is the survey data we retrieve from QILT.
-                            <br />
-                            It requires little more than parsing it and adding a couple of fields to it.
+                            <br /> It requires little more than parsing it and adding a couple of fields to it.
                         </p>
                     </aside>
                 </section>
@@ -119,12 +121,10 @@
                     <aside class="notes">
                         <ul>
                             <li>
-                                Some datasets are quite complex. For instance, Ray created a dataset that has
-                                nearly 500 lines of code and 10 pages of documentation explaining it.
+                                Some datasets are quite complex. For instance, Ray created a dataset that has nearly 500 lines of code and 10 pages of documentation explaining it.
                             </li>
                             <li>
-                                They require lots of upkeep. Made a dataset for Sathish and TM1, he is constantly asking
-                                for adjustments
+                                They require lots of upkeep. Made a dataset for Sathish and TM1, he is constantly asking for adjustments
                             </li>
                             <li>
                                 Not very good at being used outside their intended purpose. For instace, TM1 datasets.
@@ -144,8 +144,7 @@
                 <section>
                     <h2 class="fragment shrink" data-fragment-index="1">So what does it actually do?</h2>
                     <p class="fragment" data-fragment-index="1">
-                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a
-                        format which allows cross-source analysis and encourages exploration.
+                        Takes data from disparate sources, cleans it, applies business rules and provides the data in a format which allows cross-source analysis and encourages exploration.
                     </p>
                 </section>
                 <section>
@@ -156,22 +155,31 @@
                             <li class="fragment">Slow for massive queries</li>
                         </ul>
                         <li class="fragment">At the wrong grain</li>
-                        <li class="fragment">At the wrong time span</li>
                         <li class="fragment">Lacks dimensionality</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Designed for fast reading and writing, however, only limited reading. Looking at 100 records simultaneously would be pushing it</li>
+                            <li>The grain is at what level you want to see the information. For instance, we only care about a students daily movements, not anything finer. In all likelihood the grain is not going to match what you need for analysis</li>
+                            <li>Dimensionality is what allows the facts to answer so many different questions, quickly. Want to know the students who are international? You could probably do that with the source data pretty easily. What about the international
+                                students who are enrolled in MA1301? Getting a bit slower. What about a count of all international students who enrolled in MA1301 split by year and study period? You've probably just brought the production system to its
+                                knees while the data warehouse hasn't broken a sweat.</li>
+                        </ul>
+                    </aside>
                 </section>
                 <section>
                     <div class="r-stack">
                         <h3 class="fragment fade-out">What does this look like?</h3>
-                        <img src="img/hmp/wholesystem-focused.png"
-                            alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
-                        <img src="img/hmp/wholesystem-cropped.png"
-                            alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
+                        <img src="img/hmp/wholesystem.png" alt="The whole system" class="fragment fade-in-then-out">
+                        <img src="img/hmp/wholesystem-focused.png" alt="The whole system with emphasis on Data Warehouse" class="fragment fade-in-then-out">
+                        <img src="img/hmp/wholesystem-cropped.png" alt="A crop of the whole system showing just the Data Warehouse" class="fragment">
                     </div>
                     <aside class="notes">
-                        Explain the three different sections.
-                        <br />
-                        Explain why we have four copies of the data.
+                        <ul>
+                            <li>This is the whole entire system, including what the BIAs produce which.</li>
+                            <li>The data warehouse section is here</li>
+                            <li>I'll go over what each part does in the next section</li>
+                        </ul>
                     </aside>
                 </section>
                 <section>
@@ -186,13 +194,7 @@
                     <h2>Extract</h2>
                     <img class="r-stretch" src="img/hmp/extract.png" alt="Extract">
                     <aside class="notes">
-                        This is where we copy the data from the source systems to our database ready for processing.
-
-                        Happens nightly.
-
-                        Only slight transforms happen here.
-
-                        A common pattern is keeping a copy of the data after every step.
+                        This is where we copy the data from the source systems to our database ready for processing. Happens nightly. Only slight transforms happen here. A common pattern is keeping a copy of the data after every step.
                     </aside>
                 </section>
                 <section>
@@ -203,24 +205,24 @@
                 <section>
                     <img src="img/hmp/transform full.png" alt="Transform Full" class="r-stretch">
                     <aside class="notes">
-                        Each dot is another file, each one showing another file.
-                        <br />
-                        Each file is applying business rules.
+                        <ul>
+                            <li>Each dot is a table which can be referenced in multiple files, each table is linked to the tables it consumes and also the tables it is consumed by.</li>
+                            <li>Each step is creating intermediary tables which applies business rules and portioning.</li>
+                            <li>Just as an aside, alot of our data is date portioned. Essentially we find stretches of time where a record hasn't updated and create a single portion for this date range. This stops us from having lots of duplicates where the
+                                data hasn't updated.</li>
+                        </ul>
                     </aside>
                 </section>
                 <section>
                     <h2>Load</h2>
                     <img src="img/hmp/Load.png" alt="Transform" class="r-stretch">
-                    <aside class="notes">Final stage is the load. In this part we take the results of all the business
-                        rules transformations and store it where the systems like Cognos and Tableu can access them.
+                    <aside class="notes">Final stage is the load. In this part we take the results of all the business rules transformations and store it where the systems like Cognos and Tableu can access them.
                     </aside>
                 </section>
                 <section>
                     <img src="img/hmp/wholesystem.png" alt="The whole system" class="r-stretch">
                     <aside class="notes">
-                        Because loading the tables takes a slow process there would normally be an
-                        outage of a few minutes where Cognos could not work. We employ a renaming trick
-                        so the Cognos and Tableu never see an outage.
+                        Because loading the tables takes a slow process there would normally be an outage of a few minutes where Cognos could not work. We employ a renaming trick so the Cognos and Tableu never see an outage.
                     </aside>
                 </section>
                 <section>
@@ -231,16 +233,15 @@
                     <img src="img/hmp/airflow.png" height="200" alt="airflow">
                     <aside class="notes">
                         Orchestration tool
-                        <br />
-                        Why do we need this? Well we currently use Shell scripts to do it.</aside>
+                        <br /> Why do we need this? Well we currently use Shell scripts to do it.
+                    </aside>
                 </section>
                 <section>
                     <img src="img/hmp/shell.png" alt="Shell script" class="r-stretch">
                 </section>
                 <section>
                     <img src="img/hmp/transform full.png" alt="Shell script" class="r-stretch">
-                    <aside class="notes">We are responsible for figuring out exactly where each of these needs to run
-                        and in what order.</aside>
+                    <aside class="notes">We are responsible for figuring out exactly where each of these needs to run and in what order.</aside>
                 </section>
                 <section>
                     <span class="fragment">File B</span> relies on <span class="fragment">File A and File C</span>
@@ -261,14 +262,35 @@
                     <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
                 </section>
                 <section>
-                    <!-- TODO -->
                     <h3>Airflow Error Notification</h3>
-                    <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
+                    <img src="img/hmp/airflow-error.png" alt="Airflow Error" class="r-stretch">
                 </section>
                 <section>
-                    <!-- TODO -->
-                    <h3>Better Error Recovery</h3>
-                    <img src="img/hmp/email.png" alt="Email Error" class="r-stretch">
+                    <h3>Other Airflow Advantages</h3>
+                    <ul>
+                        <li class="fragment">Design with cloud in mind</li>
+                        <li class="fragment">Can be used for rudimentary data checks</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Quantopian Case Study</h3>
+                    <div class="r-stack">
+                        <img src="img/hmp/quantopianlogo.png" alt="Quantopian Logo" class="fragment fade-out r-stretch" data-fragment-index="1">
+                        <ul>
+                            <li class="fragment" data-fragment-index="1">Confirmed the previous statements</li>
+                            <li class="fragment">Intern learned it</li>
+                            <li class="fragment">Others adopted it</li>
+                        </ul>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Quantopian was a financial institute in the states that consumed large amounts of data. They were similar to us in the fact that they used Bash scripts for orchestration.</li>
+                            <li>Essentially agreed with the points I've made about it allowing parallelism for faster builds and easier recovery from failures</li>
+                            <li>In six weeks an intern took one of their most complex pipelines and converted it to Airflow, all without any previous knowledge</li>
+                            <li>One surprise was that others in the office came forward to convert other tasks to Airflow.
+                            </li>
+                        </ul>
+                    </aside>
                 </section>
             </section>
             <!-- All about me! -->
@@ -280,6 +302,7 @@
                 <section>
                     <h2>Stakeholder engagement</h2>
                     <img src="img/hmp/mario-gogh-VBLHICVh-lI-unsplash.jpg" alt="" class="r-strech">
+                    <aside class="notes">As you can imagine, the business rules we use have to come from the business itself. This means any changes generally involve a few stakeholders.</aside>
                 </section>
                 <section>
                     <h3>Usual flow</h3>
@@ -289,9 +312,8 @@
                         <li class="fragment">CC Dan and Team Mates in correspondance</li>
                     </ul>
                     <aside class="notes">
-                        Middle of last year I had to handle a massive change from HR where they reorganized their data.
-                        Throughout this time I was in contact with them via Teams keeping them updated on the progress.
-                        I also kept others in my team up-to-date as the changes effected nearly eveyrone.
+                        Middle of last year I had to handle a massive change from HR where they updated a few of their definitions around the Work Function and Work Profile. Throughout this time I was in contact with them via Teams keeping them updated on the progress. I also
+                        kept others in my team up-to-date as the changes effected nearly eveyrone in the team.
                     </aside>
                 </section>
             </section>
@@ -299,7 +321,7 @@
                 <section>
                     <h2>Tools and Technical Solutions</h2>
                     <ul>
-                        <li class="fragment">Handcoded SQL</li>
+                        <li class="fragment">Hand-crafted SQL</li>
                         <li class="fragment">Oracle SQL Databases</li>
                     </ul>
                 </section>
@@ -307,20 +329,161 @@
                     <h2>Why Hand Coded SQL?</h2>
                     <ul>
                         <li class="fragment">It's performant</li>
-                        <li class="fragment">Not </li>
+                        <li class="fragment">Not locked into any vendor</li>
+                        <li class="fragment">SQL is widely known, allowing for easier hiring of staff</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Why Oracle SQL?</h2>
+                    <ul>
+                        <li class="fragment">The business uses it</li>
+                        <li class="fragment">Looking to move to open source alternative PostgreSQL
+                            <ul>
+                                <li class="fragment">No licensing fees</li>
+                                <li class="fragment">Better community support</li>
+                                <li class="fragment">No hidden black boxes</li>
+                                <li class="fragment">It's mature, in development for 25 years</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Essentially the business was using Oracle when the warehouse was created, so we did too.</li>
+                            <li>Being open source allows for many advantages</li>
+                        </ul>
+                    </aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Internal and External Teams</h2>
+                    <img src="img/hmp/michal-parzuchowski-lHkUBtUiI2Q-unsplash.jpg" alt="Teams" class="r-stretch">
+                    <aside class="notes">As you know, no project is done by just one person. </aside>
+                </section>
+                <section>
+                    <h3>Internal teams</h3>
+                    <ul>
+                        <li class="fragment">BIAs and Manager</li>
+                        <li class="fragment">Talk about this more in the next section</li>
+                    </ul>
+                    <aside class="notes">The main points of contact inside the team are the BIAs and the manager (Dan). I need to keep Dan up to date so he is aware on what I am working on and any resources I may require. Whereas all changes affect the BIAs down stream so
+                        they need to know what changes I've made.</aside>
+                    <aside class="notes">I'd like to focus on this a little more in the next section.</aside>
+                </section>
+                <section>
+                    <h3>External Teams</h3>
+                    <ul>
+                        <li class="fragment">Database Administrators</li>
+                        <li class="fragment">Application Solutions</li>
                     </ul>
                 </section>
             </section>
+            <section>
+                <section>
+                    <h2>Documentation and Development Methodology</h2>
+                    <img src="img/hmp/maksym-kaharlytskyi-Q9y3LRuuxmg-unsplash.jpg" alt="File cabinet" class="r-stretch">
+                    <aside class="notes">
+                        I am very excited to talk about this next section as I have been working a lot on it since the beginning of the year. It should be noted before I continue that I'm in an opportune time to implement these changes. Before the team was busy with creating
+                        the behemoth that is the data warehouse. So, none of the following is a critisicm of the team at all.
+                    </aside>
+                </section>
+                <section>
+                    <h3>The move to Git</h3>
+                    <ul>
+                        <li class="fragment">Code needs to be stored with all revisions</li>
+                        <li class="fragment">SVN was not good at this</li>
+                        <li class="fragment">Benefits of Git are:
+                            <ul>
+                                <li class="fragment">Better history</li>
+                                <li class="fragment">Easier code reviews</li>
+                                <li class="fragment">Tighter integration with existing Atlassian ecosystem</li>
+                                <li class="fragment">Accountability for changes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li class="fragment">It is important that code is not only stored, but the history of the code is also kept.</li>
+                            <li class="fragment">We were initially using SVN, but that was clunky and old. Downloading an enitre code repository consisted of download full copies of every branch someone had made</li>
+                            <li class="fragment">Git was an alternative that is used in many companies the world over.</li>
+                            <li class="fragment">It provides better history management, storing only the changes to files rather than the a full copy of the repository.</li>
+                            <li class="fragment">Atlassian offers a service for git called Bitbucket, which integrates nicely with both Confluence and Jira.</li>
+                            <li class="fragment">Git allows you to look at the person responsible for each line of code. This is critical for data governance</li>
+                        </ul>
+                        <p>
+                            At the beginning of the year I pushed hard for the move to Git. It had been planned for quite some time, however, projects always kept coming up and blocking the way. Misty had created a Git methodoligies page in Confluence, and keeping those methods
+                            in mind I moved all four environments to Git.
+                        </p>
+                    </aside>
+                </section>
+                <section>
+                    <h3>Knowledge Base</h3>
+                    <ul>
+                        <li class="fragment">Loss of team members brought knowledge base to mind</li>
+                        <li class="fragment">Made me reflect on what issues we faced
+                            <ul>
+                                <li class="fragment">Too many single points of knowledge</li>
+                                <li class="fragment">Other members where unaware of what we were doing</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Reorgaization of Knowledge Base</h3>
+                    <ul>
+                        <li class="fragment">Johnny Decimal system</li>
+                        <li class="fragment">Diátaxis Framework of documents
+                            <ul class="fragment">
+                                <li>Tutorials</li>
+                                <li>How-to Guides</li>
+                                <li>Refernce</li>
+                                <li>Explanation</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">Page ownership and expiration dates</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Team Communication</h3>
+                    <ul>
+                        <li class="fragment">Utilize Jira</li>
+                        <li class="fragment">A ticket for every piece of work</li>
+                        <li class="fragment">A single source of truth for every change</li>
+                        <li class="fragment">Jira links with Bitbucket</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Team Communication</h3>
+                    <ul>
+                        <li class="fragment">Implement a changelog</li>
+                        <li class="fragment">Lets the BIA's know exactly what has changed</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Validating Success</h2>
+                    <ul>
+                        <li class="fragment">We carefully compare the data before and after the changes</li>
+                        <li class="fragment">We get stakeholders to validate the changes</li>
+                        <li class="fragment">We have automated checks in place</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h1>Thank you for time!</h1>
+            </section>
         </div>
     </div>
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>"></script>
+    <script src="../reveal.js/dist/reveal.js"></script>
+    <script src="../reveal.js/plugin/notes/notes.js"></script>"></script>
     <script>
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
         // - https://revealjs.com/config/
         Reveal.initialize({
             hash: true,
+            totalTime: 1800,
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealNotes]
         });
