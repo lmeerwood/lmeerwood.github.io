@@ -207,7 +207,8 @@
                     <aside class="notes">
                         <ul>
                             <li>Each dot is a table which can be referenced in multiple files, each table is linked to the tables it consumes and also the tables it is consumed by.</li>
-                            <li>Each step is creating intermediary tables which applies business rules and portioning.</li>
+                            <li>Each step is creating intermediary tables which applies business rules and portioning.
+                            </li>
                             <li>Just as an aside, alot of our data is date portioned. Essentially we find stretches of time where a record hasn't updated and create a single portion for this date range. This stops us from having lots of duplicates where the
                                 data hasn't updated.</li>
                         </ul>
@@ -310,10 +311,18 @@
                         <li class="fragment">Notified by Dan</li>
                         <li class="fragment">Communicate directly with stakeholder</li>
                         <li class="fragment">CC Dan and Team Mates in correspondance</li>
+                        <li class="fragment">Leave a paper trail</li>
                     </ul>
                     <aside class="notes">
-                        Middle of last year I had to handle a massive change from HR where they updated a few of their definitions around the Work Function and Work Profile. Throughout this time I was in contact with them via Teams keeping them updated on the progress. I also
-                        kept others in my team up-to-date as the changes effected nearly eveyrone in the team.
+                        <ul>
+                            <li>People email Dan letting him know about changes upcoming to their system. Dan then informs me.</li>
+                            <li>I'll the start comminicating directly with person to get more information, and keep them informed of progress.</li>
+                            <li>Speaking of keeping people informed, I tend to CC Dan and other applicable team members in to the conversation to keep them in the loop. That way any changes that occur does not blindside them</li>
+                            <li>Middle of last year I had to handle a massive change from HR where they updated a few of their definitions around the Work Function and Work Profile. Throughout this time I was in contact with them via Teams keeping them updated
+                                on the progress. I also kept others in my team up-to-date as the changes effected nearly eveyrone in the team.
+                            </li>
+                            <li>Communication is pretty straight forward, my biggest belief is always leave a paper trail of communications so you can refer back to decisions without bothering the stakeholders again.</li>
+                        </ul>
                     </aside>
                 </section>
             </section>
@@ -323,6 +332,7 @@
                     <ul>
                         <li class="fragment">Hand-crafted SQL</li>
                         <li class="fragment">Oracle SQL Databases</li>
+                        <li class="fragment">Shell scripts for orchestration</li>
                     </ul>
                 </section>
                 <section>
@@ -348,7 +358,8 @@
                     </ul>
                     <aside class="notes">
                         <ul>
-                            <li>Essentially the business was using Oracle when the warehouse was created, so we did too.</li>
+                            <li>Essentially the business was using Oracle when the warehouse was created, so we did too.
+                            </li>
                             <li>Being open source allows for many advantages</li>
                         </ul>
                     </aside>
@@ -368,7 +379,7 @@
                     </ul>
                     <aside class="notes">The main points of contact inside the team are the BIAs and the manager (Dan). I need to keep Dan up to date so he is aware on what I am working on and any resources I may require. Whereas all changes affect the BIAs down stream so
                         they need to know what changes I've made.</aside>
-                    <aside class="notes">I'd like to focus on this a little more in the next section.</aside>
+                    <aside class="notes">I'd like to focus on communication a little more in the next section.</aside>
                 </section>
                 <section>
                     <h3>External Teams</h3>
@@ -404,8 +415,10 @@
                     <aside class="notes">
                         <ul>
                             <li class="fragment">It is important that code is not only stored, but the history of the code is also kept.</li>
-                            <li class="fragment">We were initially using SVN, but that was clunky and old. Downloading an enitre code repository consisted of download full copies of every branch someone had made</li>
-                            <li class="fragment">Git was an alternative that is used in many companies the world over.</li>
+                            <li class="fragment">We were initially using SVN, but that was clunky and old. Downloading an enitre code repository consisted of download full copies of every branch someone had made
+                            </li>
+                            <li class="fragment">Git was an alternative that is used in many companies the world over.
+                            </li>
                             <li class="fragment">It provides better history management, storing only the changes to files rather than the a full copy of the repository.</li>
                             <li class="fragment">Atlassian offers a service for git called Bitbucket, which integrates nicely with both Confluence and Jira.</li>
                             <li class="fragment">Git allows you to look at the person responsible for each line of code. This is critical for data governance</li>
